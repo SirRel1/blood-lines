@@ -113,3 +113,7 @@ li {
 	font-weight: bolder;
 	font-size: 1.3em;
 }
+
+.selector {
+	background-color: rgba(233, 229, 2, 0.322);
+}
