@@ -1,9 +1,13 @@
 body {
-	background-image: url(./NuBackGround.jpg);
+	margin: 0;
+
+	background-image: url(./redArtBG.jpg);
 }
 
 h1 {
+	background-color: rgba(0, 0, 0, 0.76);
 	color: gold;
+	font-size: 2.2em;
 }
 
 .title {
@@ -11,12 +15,13 @@ h1 {
 }
 
 .container {
-	background-color: rgba(174, 185, 12, 0.479);
+	background-color: rgba(232, 248, 8, 0.397);
 	height: 100vh;
 	width: 100vw;
 }
 
 .header {
+	margin-top: -6%;
 	border-radius: 8px;
 	height: 14%;
 	width: 100vw;
@@ -39,7 +44,7 @@ h1 {
 	height: 33%;
 	width: 15%;
 	border-radius: 10px;
-	margin-left: 9%;
+	margin-left: 5%;
 }
 .vl {
 	transform: rotate(90deg);
@@ -56,7 +61,19 @@ h1 {
 	width: 15%;
 	border-radius: 10px;
 	margin-top: 5%;
-	margin-left: 8%;
+	margin-left: 5%;
+}
+
+.btn {
+	background-color: rgba(218, 16, 16, 0.801);
+	text-align: center;
+	margin: 1%;
+	border-radius: 15px;
+}
+.btn:hover {
+	font-style: oblique;
+	color: red;
+	background-color: white;
 }
 
 .day1,
@@ -83,4 +100,15 @@ h1 {
 
 .time {
 	float: right;
+}
+
+li {
+	font-size: larger;
+	color: rgb(10, 10, 0);
+}
+
+.read {
+	background-color: aliceblue;
+	border-radius: 8px;
+	font-weight: bolder;
 }
