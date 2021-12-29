@@ -1,0 +1,86 @@
+body {
+	background-image: url(./NuBackGround.jpg);
+}
+
+h1 {
+	color: gold;
+}
+
+.title {
+	text-align: center;
+}
+
+.container {
+	background-color: rgba(174, 185, 12, 0.479);
+	height: 100vh;
+	width: 100vw;
+}
+
+.header {
+	border-radius: 8px;
+	height: 14%;
+	width: 100vw;
+	background-color: rgba(255, 217, 0, 0.856);
+}
+
+.date {
+	height: 33%;
+	border-radius: 10px;
+	font-size: 1em;
+	margin: 8px;
+	margin-top: 8.8%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.readings {
+	font-size: 1.4em;
+	font-weight: bolder;
+	text-align: center;
+	height: 33%;
+	width: 15%;
+	border-radius: 10px;
+	margin-left: 9%;
+}
+.vl {
+	transform: rotate(90deg);
+	margin-right: -25%;
+	width: 33%;
+	height: 5px;
+	background-color: rgba(182, 164, 62, 0.048);
+}
+.readings2 {
+	font-size: 1.4em;
+	font-weight: bolder;
+	text-align: center;
+	height: 33%;
+	width: 15%;
+	border-radius: 10px;
+	margin-top: 5%;
+	margin-left: 8%;
+}
+
+.day1,
+.day2,
+.day3,
+.day4,
+.day5,
+.day6,
+.day7,
+.day8,
+.day9,
+.day10,
+.day11,
+.day12,
+.day13,
+.day14 {
+	font-size: 1.2em;
+	padding: 8px;
+	margin: 5px;
+	width: 94vw;
+	height: 5.1%;
+	/* background-image: url(./NuBackGround.jpg); */
+}
+
+.time {
+	float: right;
+}
