@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 
-	background-image: url(./redArtBG.jpg);
+	background-image: url(./NuBackGround.jpg);
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 }
 
 .container {
-	background-color: rgba(232, 248, 8, 0.397);
+	background-color: rgba(8, 64, 248, 0.397);
 	height: 100vh;
 	width: 100vw;
 }
@@ -104,11 +104,11 @@ h1 {
 
 li {
 	font-size: larger;
-	color: rgb(10, 10, 0);
+	color: rgb(255, 255, 255);
 }
 
 .read {
-	background-color: aliceblue;
+	background-color: rgba(2, 33, 59, 0.705);
 	border-radius: 8px;
 	font-weight: bolder;
 	font-size: 1.3em;
