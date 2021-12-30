@@ -17,7 +17,7 @@ let i = 0;
 function addToChart() {
 	let count = ++i;
 
-	let thisDay = new Date();
+	let thisDay = moment().format('MMMM Do YYYY, h:mm:ss a');
 	let writeDate = date.value;
 	let writeTop = topNum.value;
 	let writeBottom = bottomNum.value;
@@ -33,7 +33,7 @@ function addToChart() {
 }
 
 function dateTime() {
-	let date = new Date();
+	let date = moment().format('MMMM Do YYYY, h:mm:ss a');
 	time.innerText = date;
 }
 
