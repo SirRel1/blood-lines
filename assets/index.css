@@ -130,6 +130,8 @@ li {
 
 .selector {
 	background-color: rgba(233, 229, 2, 0.322);
+	font-weight: bolder;
+	text-align: center;
 }
 
 .red {
