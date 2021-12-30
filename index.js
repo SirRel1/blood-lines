@@ -17,7 +17,7 @@ let i = 0;
 function addToChart() {
 	let count = ++i;
 
-	let thisDay = moment().format('MMMM Do YYYY, h:mm:ss a');
+	let thisDay = moment().format('MMMM Do YYYY, h:mm a');
 	let writeDate = date.value;
 	let writeTop = topNum.value;
 	let writeBottom = bottomNum.value;
@@ -28,7 +28,7 @@ function addToChart() {
 		? flash.setAttribute('class', 'red')
 		: ((topNum.value = ''), (bottomNum.value = ''));
 
-	listDay.innerHTML += `<li class=this><p><b>Blood Pressure:</b></p> <span class='read'>${writeTop}/  ${writeBottom}</span> <span class="time">${thisDay}</span><hr><button class='clear' onclick='clearRecent()'>&#xf014</button></li>`;
+	listDay.innerHTML += `<li class=this><p><b>Blood Pressure:</b></p> <span class='read'>${writeTop}/  ${writeBottom}</span><br /> <span class="time">${thisDay}</span><hr><button class='clear' onclick='clearRecent()'>&#xf014</button></li>`;
 	localStorage.setItem(`${count}`, `${thisDay},${writeTop}, ${writeBottom}`);
 }
 
