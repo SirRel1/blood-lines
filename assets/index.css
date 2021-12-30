@@ -5,7 +5,7 @@ body {
 
 	background-size: contain;
 
-	background-image: url(./moreNotesBG.jpg.crdownload);
+	background-image: url(./moreNotesBG.jpg);
 }
 
 h1 {
@@ -107,12 +107,13 @@ h1 {
 }
 
 li {
+	background-color: rgba(0, 0, 0, 0.699);
 	font-size: larger;
 	color: rgb(255, 255, 255);
 }
 
 .read {
-	background-color: rgba(2, 33, 59, 0.705);
+	background-color: rgba(233, 229, 10, 0.705);
 	border-radius: 8px;
 	font-weight: bolder;
 	font-size: 1.3em;
@@ -120,4 +121,24 @@ li {
 
 .selector {
 	background-color: rgba(233, 229, 2, 0.322);
+}
+
+.red {
+	background-color: red;
+	text-align: center;
+}
+
+.clear {
+	width: 40%;
+	height: 77%;
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+	margin-left: 30%;
+	margin-bottom: 2%;
+	color: red;
+	background-color: rgba(0, 0, 0, 0.568);
+}
+.hide {
+	display: none;
 }
