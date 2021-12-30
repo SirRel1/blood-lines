@@ -6,6 +6,7 @@ const time = document.querySelector('.selector');
 const listDay = document.querySelector('.day1');
 const flash = document.querySelector('.title');
 const clear = document.querySelector('.clear');
+const theBody = document.querySelector('body');
 
 button.disabled = true;
 
@@ -20,6 +21,7 @@ function addToChart() {
 	let writeDate = date.value;
 	let writeTop = topNum.value;
 	let writeBottom = bottomNum.value;
+	theBody.setAttribute('class', 'body2');
 	button.disabled = true;
 
 	writeTop > 171 || writeBottom > 106
