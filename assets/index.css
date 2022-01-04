@@ -153,3 +153,9 @@ li {
 .hide {
 	display: none;
 }
+
+.next {
+	border-radius: 12px;
+	background-color: green;
+	margin-left: 10%;
+}

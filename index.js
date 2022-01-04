@@ -28,8 +28,8 @@ function addToChart() {
 		? flash.setAttribute('class', 'red')
 		: ((topNum.value = ''), (bottomNum.value = ''));
 
-	listDay.innerHTML += `<li class=this><p><b>Blood Pressure:</b></p> <span class='read'>${writeTop}/  ${writeBottom}</span><br /> <span class="time">${thisDay}</span><hr><button class='clear' onclick='clearRecent()'>&#xf014</button></li>`;
-	localStorage.setItem(`${count}`, `${thisDay},${writeTop}, ${writeBottom}`);
+	listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${writeTop}/  ${writeBottom}</span><br /> <span class="time">${thisDay}</span><hr><button class='clear' onclick='clearRecent(this)'>Trash &#xf014</button></li>`;
+	localStorage.setItem(`${thisDay}`, `${writeTop}, ${writeBottom}`);
 }
 
 function dateTime() {
@@ -37,10 +37,41 @@ function dateTime() {
 	time.innerText = date;
 }
 
-function clearRecent() {
-	let selected = document.querySelector('.this');
+function clearRecent(a) {
+	let selected = document.querySelector('.thisOne');
 	selected.setAttribute('class', 'hide');
-	localStorage.removeItem(i);
+	let clicked = localStorage.key(this);
+	console.log(localStorage.key(this));
+	localStorage.removeItem(clicked);
 }
 
 setInterval(dateTime, 1000);
+
+function returning() {
+	let a = 0;
+
+	localStorage.getItem(this);
+	let clicked = localStorage.key(i);
+	console.log(clicked);
+	console.log(localStorage.getItem(clicked));
+
+	var values = [],
+		keys = Object.keys(localStorage),
+		values = Object.values(localStorage);
+	i = keys.length;
+
+	while (i--) {
+		values.push(localStorage.getItem(keys[i]));
+	}
+
+	theNext = () => {
+		++a;
+		listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${keys[a]}/${values[a]}</span><br /> <span class="time">${clicked}</span><hr><button class='clear' onclick='clearRecent(this)'>&#xf014</button><button class='next' onclick='theNext()'>Next</button></li>`;
+		console.log(a);
+
+		return a;
+	};
+
+	return (listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${keys[a]}/${values[a]}</span><br /> <span class="time">${clicked}</span><hr><button class='clear' onclick='clearRecent(this)'>&#xf014</button><button class='next' onclick='theNext()'>Prev>></button></li>`);
+}
+returning();
