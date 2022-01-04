@@ -1,6 +1,8 @@
 # Blood Lines
 
-## Description To help people keep track of their blood pressure readings.
+## Description:
+
+To help people keep track of their blood pressure readings.
 
 ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
