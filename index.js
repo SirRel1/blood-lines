@@ -67,13 +67,13 @@ function returning() {
 	theNext = () => {
 		++a;
 		listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${values[a]}</span><br /> <span class="time">${keys[a]}</span><hr><button class='clear' onclick='clearRecent(this)'>Trash &#xf014</button></li>`;
-		console.log(a);
+
 		let clearBtn = document.querySelector('.next');
 
-		if (localStorage.key.length < a) {
+		if (localStorage.length - 1 == a) {
 			clearBtn.disabled = true;
 		}
-
+		console.log(a, localStorage.length - 1);
 		return a;
 	};
 
