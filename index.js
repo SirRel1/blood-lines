@@ -41,7 +41,7 @@ function clearRecent(e) {
 	let selected = document.querySelector('.thisOne');
 	selected.setAttribute('class', 'hide');
 	let clicked = localStorage.key(e);
-	console.log(localStorage.key(e));
+
 	localStorage.removeItem(clicked);
 }
 
@@ -66,7 +66,7 @@ function returning() {
 
 	theNext = () => {
 		++a;
-		listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${keys[a]}/${values[a]}</span><br /> <span class="time">${clicked}</span><hr><button class='clear' onclick='clearRecent(this)'>Trash &#xf014</button></li>`;
+		listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${values[a]}</span><br /> <span class="time">${keys[a]}</span><hr><button class='clear' onclick='clearRecent(this)'>Trash &#xf014</button></li>`;
 		console.log(a);
 		let clearBtn = document.querySelector('.next');
 
@@ -77,7 +77,7 @@ function returning() {
 		return a;
 	};
 
-	return (listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${keys[a]}/${values[a]}</span><br /> <span class="time">${clicked}</span><hr><button class='clear' onclick='clearRecent(this)'>Trash &#xf014</button><button class='next' onclick='theNext()'>Prev>></button></li>`);
+	return (listDay.innerHTML += `<li class=thisOne><p><b>Blood Pressure:</b></p> <span class='read'>${values[a]}</span><br /> <span class="time">${keys[a]}</span><hr><button class='clear' onclick='clearRecent(this)'>Trash &#xf014</button><button class='next' onclick='theNext()'>Prev>></button></li>`);
 }
 
 localStorage.length == 0 ? console.log('nada') : returning();
